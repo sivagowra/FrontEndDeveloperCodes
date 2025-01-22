@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guess Game</title>
+    <style>
+        p{
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          font-size: 28px;
+          color: brown;
+          border: 1px solid black;
+          padding: 100px;
+        }
+    </style>
+
+</head>
+<body>
+    <div>
+        <p id="demo"></p>
+    </div>
+    
+    <script>
+        const minNum=50;
+        const maxNum=100;
+        const answer=Math.floor(Math.random()*(maxNum-minNum+1))+minNum;
+        // console.log(answer);
+        // document.write(answer)
+        let demo=document.getElementById('demo');
+        let attempts=0;
+        let guess;
+        let running=true;
+
+        while(running){
+            guess=window.prompt(`Guess a Number Between ${minNum}-${maxNum}`);
+            guess=Number(guess);
+
+            if(isNaN(guess)){
+                window.alert('please enter a valid number')
+            }
+            else if(guess < minNum || guess > maxNum){
+                window.alert('please enter a valid number')
+            }
+            else{
+                attempts++;
+                if(guess<answer){
+                    window.alert('Too Low! Try Again!')
+                }
+                else if(guess>answer){
+                    window.alert('Too High! Try Again!')
+
+                }
+                else{
+                   window.alert(`Correct! the answer was ${answer}. it took you ${attempts} attempts`)
+                   demo.innerHTML=`Your Answer${answer}. your are ${attempts} attempts`
+                   running=false; 
+                }
+            }
+        }
+        
+    </script>
+</body>
+</html>
