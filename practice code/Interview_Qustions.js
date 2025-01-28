@@ -69,12 +69,21 @@
 //  abc()
 
 
-function abc(a,b){
-    'use strict'
-    a=100
-    b=200
-    return arguments[0]+arguments[1]
-    console.log(a+b);
+// function abc(a,b){
+//     'use strict'
+//     a=100
+//     b=200
+//     return arguments[0]+arguments[1]
+//     console.log(a+b);
     
-}
-console.log(abc(100,200));
+// }
+// console.log(abc(100,200));
+
+
+console.log("A"-1);
+console.log("siva"+"100");
+console.log("2"+2-'2');
+console.log(typeof ("2"+2-'2'));
+
+
+
