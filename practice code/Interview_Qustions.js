@@ -86,4 +86,13 @@ console.log("2"+2-'2');
 console.log(typeof ("2"+2-'2'));
 
 
+let x=123;
+let y=new Number(123);
+console.log(typeof x);
+console.log(typeof y);
+console.log(x===y);
+
+console.log("5"+3);
+console.log("5"-3);
+
 
