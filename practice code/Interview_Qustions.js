@@ -80,19 +80,29 @@
 // console.log(abc(100,200));
 
 
-console.log("A"-1);
-console.log("siva"+"100");
-console.log("2"+2-'2');
-console.log(typeof ("2"+2-'2'));
+// console.log("A"-1);
+// console.log("siva"+"100");
+// console.log("2"+2-'2');
+// console.log(typeof ("2"+2-'2'));
 
 
-let x=123;
-let y=new Number(123);
-console.log(typeof x);
-console.log(typeof y);
-console.log(x===y);
+// let x=123;
+// let y=new Number(123);
+// console.log(typeof x);
+// console.log(typeof y);
+// console.log(x===y);
 
-console.log("5"+3);
-console.log("5"-3);
+// console.log("5"+3);
+// console.log("5"-3);
+
+
+console.log(3 && 5);
+console.log(3 || 5);
+
+
+let a="he".split(",");
+let b=["h","e"];
+console.log(a==b);
+
 
 

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array </title>
+</head>
+<body>
+    <div>
+        
+    </div>
+    <script>
+        let Array=["Srinuvas","Narasimha rao","Subaravu","Gopala Krishna"];
+        // add last item
+        Array.push("Naveen");
+        for( let i=0;i<=Array.length-1;i++){
+            console.log(Array[i]);
+        }
+
+        // delete last item
+        Array.pop()
+        console.log(Array);
+
+//delete first item
+        Array.shift()
+        console.log(Array);
+ //add first item 
+  Array.unshift("Ram babu");
+  console.log(Array);
+  // sorting
+  Array.sort();
+  console.log(Array);
+  // reverese
+   Array.reverse();
+   console.log(Array);
+   let index =Array.indexOf("Naveen");
+   console.log(index)
+   //splice
+   Array.splice(2,1,"Gopi Raju")
+   console.log(Array);
+ 
+   
+
+   // spread operater
+
+   let fruits=["mango","banana","orange","mango"];
+   let vegtables=["tamato","carrots","bottlegod"];
+   let food=[...fruits,...vegtables,"eggs","milk"];
+    food=new Set(food)
+   console.log(food);
+   
+   
+   
+  
+        
+
+        
+    </script>
+    
+</body>
+</html>

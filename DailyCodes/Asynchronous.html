@@ -52,14 +52,14 @@ getCallBack(1,(bio)=>{
   const promise=new Promise((resolve,reject) =>{
     setInterval(()=>{
         const d=new Date()
-        const date=d.getFullYear()+"/"+d.getMonth()+1+"/"+d.getDay()
+        const date=d.getHours()+":"+d.getMinutes()+":"+d.getSeconds()
         resolve(date)
         reject("Not Dispaly date")
     },2000)
   });
   promise
-  .then((result)=>console.log(result))
-  .catch((error)=>console.log(error));
+  .then((result)=>document.write(result))
+  .catch((error)=>document.write(error));
 
   
     </script>
