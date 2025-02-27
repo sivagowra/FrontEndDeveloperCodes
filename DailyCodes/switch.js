@@ -1,4 +1,4 @@
-let day=10;
+let day=4;
 switch(day) {
     case 1:
         console.log('Sunday');
@@ -13,7 +13,7 @@ switch(day) {
         console.log('Wednesday');
         break;
     case 5:
-        console.log('thrusday');
+        console.log('Thrusday');
         break;
     case 6:
         console.log('Friday');

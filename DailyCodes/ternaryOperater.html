@@ -17,7 +17,7 @@
         // document.write(message)
         
 // discount apply
-        let perchaseAmount=prompt();
+        let perchaseAmount=prompt('perchaseAmount');
         let discount=perchaseAmount>=100?10:0;
         console.log(`Your Total is $${perchaseAmount-perchaseAmount * (discount/100) }`);
         document.write(`Your Total is $${perchaseAmount - perchaseAmount * (discount/100) }`)
@@ -34,7 +34,7 @@ let a=10>9>8;
         //method changeing 
 
         let user= window.prompt("enter your name:");
-        user=user.trim().charAt(0).toUpperCase()+user.trim().slice(1).toLowerCase();
+        user=user.trim().charAt(0).toUpperCase()+user.trim().slice(1,2).toLowerCase();
         console.log(user);
         
         

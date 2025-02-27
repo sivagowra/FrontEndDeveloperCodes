@@ -19,25 +19,25 @@
 
         // delete last item
         Array.pop()
-        console.log(Array);
+        console.log(Array);// ['Srinuvas', 'Narasimha rao', 'Subaravu', 'Gopala Krishna']
 
 //delete first item
         Array.shift()
-        console.log(Array);
+        console.log(Array); //['Narasimha rao', 'Subaravu', 'Gopala Krishna']
  //add first item 
   Array.unshift("Ram babu");
-  console.log(Array);
+  console.log(Array);// ['Ram babu', 'Narasimha rao', 'Subaravu', 'Gopala Krishna']
   // sorting
   Array.sort();
-  console.log(Array);
+  console.log(Array); //  ['Gopala Krishna', 'Narasimha rao', 'Ram babu', 'Subaravu']
   // reverese
    Array.reverse();
-   console.log(Array);
+   console.log(Array); // ['Subaravu', 'Ram babu', 'Narasimha rao', 'Gopala Krishna']
    let index =Array.indexOf("Naveen");
-   console.log(index)
+   console.log(index)//-1
    //splice
-   Array.splice(2,1,"Gopi Raju")
-   console.log(Array);
+   Array.splice(2,1,"Gop",'nop')
+   console.log(Array); // ['Subaravu', 'Ram babu', 'Gop', 'nop', 'Gopala Krishna']
  
    
 
@@ -48,6 +48,8 @@
    let food=[...fruits,...vegtables,"eggs","milk"];
     food=new Set(food)
    console.log(food);
+   
+   
    
    
    
